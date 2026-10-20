@@ -65,4 +65,8 @@ Pipeline `.github/workflows/ci.yml` запускается при каждом `
 3. **SCA** — Snyk (`snyk test --all-projects`) с публикацией отчётов в артефакте
    `security-reports`.
 
+Последний успешный прогон: <https://github.com/kkotlyarenko/infosec-lab1/actions/runs/39447287939>
 
+![ci_run](docs/img/ci-run.png)
+
+![ci_steps](docs/img/ci-steps.png)
