@@ -1,0 +1,15 @@
+<!--
+  Исключения для SpotBugs.
+  Здесь перечислены осознанно принятые ложные срабатывания (с обоснованием).
+-->
+<FindBugsFilter>
+    <!--
+      THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION: сигнатуры методов заданы
+      Spring Security (AuthenticationConfiguration#getAuthenticationManager и
+      HttpSecurity#build объявляют throws Exception), сузить тип исключения нельзя.
+    -->
+    <Match>
+        <Class name="com.kkotlyarenko.microblog.config.SecurityConfig"/>
+        <Bug pattern="THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION"/>
+    </Match>
+</FindBugsFilter>

@@ -1,0 +1,20 @@
+# зависимости и сборка
+target/
+*.class
+
+# секреты окружения
+.env
+
+# БД H2
+data/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# системное
+.DS_Store
